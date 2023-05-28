@@ -1,0 +1,177 @@
+body {
+  background-color: #1E395B;
+
+  background-image: radial-gradient(#45464c 0.5px, transparent 0.5px),
+    radial-gradient(#45464c 0.5px, #390000 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+}
+.slider-frame {
+  width: 500px;
+  height: 100%;
+  margin: 50px auto 0;
+  overflow: hidden;
+}
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 16s infinite alternate ease-out;
+}
+.slider-frame li {
+  list-style: none;
+  width: 100%;
+}
+.slider-frame img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  }
+  20% {
+    margin-left: 0%;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  95% {
+    margin-left: -300%;
+  }
+}
+
+
+
+/* card */
+.card-container{
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px -5px;
+  transition: 0.3s;
+  animation: ease-in;
+  background-color: white;
+  margin: 10px;
+  height: 100%;   
+}
+.card-container:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px 0px;;
+
+}
+.image-container img{
+  overflow: hidden;
+  height: 200px;
+}
+
+.card-content {
+  margin: 1rem;
+  margin-top: 0.5rem;
+}
+
+h3,p {
+  margin: 2;
+  padding: 0;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  text-align: start;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+
+}
+
+.btn button {
+  padding: 0.5 rem;
+  background-color: white;
+  border: none;
+  transition: 0.2s;
+  margin-bottom: 0.5 rem;
+  border-radius: 3px;
+}
+
+.btn button:hover {
+  background: rgba(27, 156, 252, 0.1);
+  transform: scale(1);
+}
+
+a {
+  text-transform: uppercase;
+  color: #1b9cfc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* style.css */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  flex-wrap: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+  overflow-x: auto; /* Agrega barra de desplazamiento horizontal cuando se excede el ancho */
+  margin-bottom: 250px;
+  height: 100%;
+  margin: 10vh;
+}
+
+/* Estilos para los elementos de la grilla */
+.grid-container > * {
+  background-color: #fafafa;
+  height: auto; /* Ajusta la altura automáticamente */
+  margin-bottom: 0px; /* Elimina la separación hacia abajo */
+  margin-left: 10px; /* Aumenta la separación hacia los lados */
+  margin-right: 10px; /* Aumenta la separación hacia los lados */
+}
+
+
+
+.background-cards {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  border-radius: 150px;
+  background-image: url('../../../img/img3.jpg');
+  background-size: cover;
+  padding: 5%;
+
+}
+
+.boton {
+  background: #3866f2;
+  color: #fdfdfd;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 0.5em;
+  width: 200px;
+}

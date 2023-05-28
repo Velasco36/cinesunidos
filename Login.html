@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="icon"
+      href="/img/cinesunidos.jpg"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="https://www.cinesunidos.com/">
+            <img
+              src="./img/cinesunidos.jpg"
+              alt="Cines Unidos"
+              class="logo"
+              width="120"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+               
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    <h1 class="text-center mb-5 letra mt-5" >Cines Unidos</h1>
+    <form class="form">
+      <img
+        src="/img/cinesunidos.jpg"
+        id="ima"
+        class="logo"
+      />
+      <h2 class="form_title">Iniciar Session</h2>
+
+    
+   
+      <div class="form_container">
+       
+        <div class="form_group">
+          <input type="text" id="user" class="form_input" placeholder=" " />
+          <label for="user" class="form_label">usuario</label>
+          <span class="form_line"></span>
+        </div>
+        <div class="form_group">
+          <input
+            type="password"
+            id="password"
+            class="form_input"
+            placeholder=" "
+          />
+          <label for="password" class="form_label">contraseña</label>
+          <span class="form_line"></span>
+        </div>
+        <input type="submit" class="form_submit" value="Iniciar" />
+      </div>
+    </form>
+  </body>
+</html>
